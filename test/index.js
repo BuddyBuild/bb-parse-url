@@ -100,7 +100,7 @@ const INPUTS = [
       , {
             protocols: ["ssh"]
           , protocol: "ssh"
-          , port: null
+          , port: 22
           , resource: "github.com"
           , user: "git"
           , pathname: "/4ever/repo.git"
