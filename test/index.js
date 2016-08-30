@@ -73,11 +73,63 @@ const INPUTS = [
         "git@github.com:IonicaBizau/git-stats.git"
       , {
             protocols: []
-          , protocol: "ssh"
+          , protocol: "scp"
           , port: null
           , resource: "github.com"
           , user: "git"
           , pathname: "/IonicaBizau/git-stats.git"
+          , hash: ""
+          , search: ""
+        }
+    ]
+  , [
+        "git@github.com:4ever/repo.git"
+      , {
+            protocols: []
+          , protocol: "scp"
+          , port: null
+          , resource: "github.com"
+          , user: "git"
+          , pathname: "/4ever/repo.git"
+          , hash: ""
+          , search: ""
+        }
+    ]
+  , [
+        "ssh://git@github.com:4ever/repo.git"
+      , {
+            protocols: ["ssh"]
+          , protocol: "ssh"
+          , port: null
+          , resource: "github.com"
+          , user: "git"
+          , pathname: "/4ever/repo.git"
+          , hash: ""
+          , search: ""
+        }
+    ]
+  , [
+        "ssh://git@stash.acme.com:7999/some/path.git"
+      , {
+            protocols: ["ssh"]
+          , protocol: "ssh"
+          , port: 7999
+          , resource: "stash.acme.com"
+          , user: "git"
+          , pathname: "/some/path.git"
+          , hash: ""
+          , search: ""
+        }
+    ]
+  , [
+        "git@stash.acme.com:7999/some/path.git"
+      , {
+            protocols: []
+          , protocol: "scp"
+          , port: null
+          , resource: "stash.acme.com"
+          , user: "git"
+          , pathname: "/7999/some/path.git"
           , hash: ""
           , search: ""
         }
