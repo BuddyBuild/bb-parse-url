@@ -134,6 +134,19 @@ const INPUTS = [
           , search: ""
         }
     ]
+  , [
+        "https://UsEr:PasS@sUb.HosTnaMe.Com/soMe/pAth.gIt"
+      , {
+            protocols: ["https"]
+          , protocol: "https"
+          , port: null
+          , resource: "sub.hostname.com"
+          , user: "UsEr:PasS"
+          , pathname: "/soMe/pAth.gIt"
+          , hash: ""
+          , search: ""
+        }
+    ]
 ];
 
 tester.describe("check urls", test => {
